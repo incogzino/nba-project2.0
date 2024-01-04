@@ -26,9 +26,10 @@
   },
   
   "jest": {
-  
+
+    "testEnvironment": "jsdom",
     
-  "moduleNameMapper": {
+    "moduleNameMapper": {
   
     
     

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Search from './searchBar';
 import image from 'C:/React/nba-stats/src/nba.jpg';
+// import MyComponent from './Addition';
 
 // Definiing the specifications for the players
 interface Player {
@@ -20,6 +21,8 @@ interface Player {
 function App(): JSX.Element {
   const [players, setPlayers] = useState<Player[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  
+
 
   // API gets fetched 
 
@@ -108,6 +111,9 @@ function App(): JSX.Element {
         </div>
       ))}
     </div>
+
+    {/* the addition ting */}
+    {/* <MyComponent num1={5} num2={10} /> */}
     </>
   );
 }

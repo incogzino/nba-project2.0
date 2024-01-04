@@ -1,5 +1,5 @@
 import { render, fireEvent } from '@testing-library/react';
-import App from './App.tsx';
+import App from '../src/searchList';
 
 test('handleSearchInputChange updates searchQuery correctly', () => {
   const { getByPlaceholderText } = render(<App />);
