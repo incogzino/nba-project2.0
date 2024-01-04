@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\React\nba-project\test\MockAPI.test.tsx">
+  </file>
   <file path="C:\React\nba-project\test\link.test.js">
-    <testCase name="changes the class when hovered" duration="25"/>
+    <testCase name="changes the class when hovered" duration="42"/>
+  </file>
+  <file path="C:\React\nba-project\test\render.test.tsx">
+    <testCase name="App component renders without crashing" duration="97">
+      <failure message="ReferenceError: fetch is not defined"><![CDATA[ReferenceError: fetch is not defined
+    at fetch (C:\React\nba-project\src\App.tsx:27:5)
+    at commitHookEffectListMount (C:\React\nba-project\node_modules\react-dom\cjs\react-dom.development.js:23150:26)
+    at commitPassiveMountOnFiber (C:\React\nba-project\node_modules\react-dom\cjs\react-dom.development.js:24931:11)
+    at commitPassiveMountEffects_complete (C:\React\nba-project\node_modules\react-dom\cjs\react-dom.development.js:24891:9)
+    at commitPassiveMountEffects_begin (C:\React\nba-project\node_modules\react-dom\cjs\react-dom.development.js:24878:7)
+    at commitPassiveMountEffects (C:\React\nba-project\node_modules\react-dom\cjs\react-dom.development.js:24866:3)
+    at flushPassiveEffectsImpl (C:\React\nba-project\node_modules\react-dom\cjs\react-dom.development.js:27039:3)
+    at flushPassiveEffects (C:\React\nba-project\node_modules\react-dom\cjs\react-dom.development.js:26984:14)
+    at C:\React\nba-project\node_modules\react-dom\cjs\react-dom.development.js:26769:9
+    at flushActQueue (C:\React\nba-project\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\React\nba-project\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\React\nba-project\node_modules\@testing-library\react\dist\act-compat.js:46:25
+    at renderRoot (C:\React\nba-project\node_modules\@testing-library\react\dist\pure.js:161:26)
+    at render (C:\React\nba-project\node_modules\@testing-library\react\dist\pure.js:247:10)
+    at Object.<anonymous> (C:\React\nba-project\test\render.test.tsx:8:9)
+    at Promise.then.completed (C:\React\nba-project\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\React\nba-project\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\React\nba-project\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\React\nba-project\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\React\nba-project\node_modules\jest-circus\build\run.js:126:9)
+    at run (C:\React\nba-project\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\React\nba-project\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\React\nba-project\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\React\nba-project\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\React\nba-project\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\React\nba-project\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
   </file>
 </testExecutions>
