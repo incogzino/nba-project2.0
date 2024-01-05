@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\React\nba-project\test\sum.test.js">
-    <testCase name="adds 1 + 2 to equal 3" duration="26"/>
+    <testCase name="adds 1 + 2 to equal 3" duration="49"/>
   </file>
   <file path="C:\React\nba-project\test\link.test.js">
-    <testCase name="changes the class when hovered" duration="97"/>
+    <testCase name="changes the class when hovered" duration="110"/>
   </file>
   <file path="C:\React\nba-project\test\scroll.test.tsx">
-    <testCase name="Scroll component renders children inside a scrollable container" duration="150"/>
+    <testCase name="Scroll component renders children inside a scrollable container" duration="167"/>
+  </file>
+  <file path="C:\React\nba-project\test\searchList.test.tsx">
+    <testCase name="SearchList component renders filtered players" duration="125"/>
+    <testCase name="SearchList component renders no players when filteredPlayers is empty" duration="7"/>
   </file>
   <file path="C:\React\nba-project\test\render.test.js">
-    <testCase name="App component renders player card for Ike Anigbogu" duration="179"/>
+    <testCase name="App component renders player card for Ike Anigbogu" duration="148"/>
   </file>
 </testExecutions>
