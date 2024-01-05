@@ -26,10 +26,12 @@
   },
   
   "jest": {
-
-    "testEnvironment": "jsdom",
+  
     
-    "moduleNameMapper": {
+  "testEnvironment": "jsdom",
+  
+    
+  "moduleNameMapper": {
   
     
     
@@ -47,6 +49,9 @@
   },
   
   "dependencies": {
+  
+    
+  "@testing-library/jest-dom": "^6.2.0",
   
     
   "react": "^18.2.0",

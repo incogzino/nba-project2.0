@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\React\nba-project\test\link.test.js">
-    <testCase name="changes the class when hovered" duration="37"/>
-  </file>
   <file path="C:\React\nba-project\test\sum.test.js">
-    <testCase name="adds 1 + 2 to equal 3" duration="10"/>
+    <testCase name="adds 1 + 2 to equal 3" duration="17"/>
+  </file>
+  <file path="C:\React\nba-project\test\link.test.js">
+    <testCase name="changes the class when hovered" duration="42"/>
+  </file>
+  <file path="C:\React\nba-project\test\render.test.js">
+    <testCase name="App component renders player card for Ike Anigbogu" duration="84"/>
   </file>
 </testExecutions>

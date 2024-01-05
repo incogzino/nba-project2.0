@@ -1,17 +1,17 @@
 
-// import fetchMock from 'jest-fetch-mock';
-// import App from './App.tsx';
+import fetchMock from 'jest-fetch-mock';
+import App from './App.tsx';
 
-// beforeEach(() => {
-//   fetchMock.resetMocks();
-// });
+beforeEach(() => {
+  fetchMock.resetMocks();
+});
 
-// test('fetches players data on mount', async () => {
-//   fetchMock.mockResponseOnce(JSON.stringify({ data: [{ first_name: 'Player' }] }));
+test('fetches players data on mount', async () => {
+  fetchMock.mockResponseOnce(JSON.stringify({ data: [{ first_name: 'Player' }] }));
 
-//   await act(async () => {
-//     render(<App />);
-//   });
+  await act(async () => {
+    render(<App />);
+  });
 
-//   expect(fetchMock).toHaveBeenCalledWith('http://localhost:5174/api/players');
-// });
+  expect(fetchMock).toHaveBeenCalledWith('http://localhost:5174/api/players');
+});
