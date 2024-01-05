@@ -56,7 +56,7 @@ function App(): JSX.Element {
         </div>
         </center>
 
-      <div className='searchPlayers'>
+      <div data-testid='mock-search-list' className='searchPlayers'>
       <input 
         type="text"
         className="NBA_Search"
