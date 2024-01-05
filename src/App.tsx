@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Search from './searchBar';
 import image from 'C:/React/nba-stats/src/nba.jpg';
-// import MyComponent from './Addition';
+
 
 // Definiing the specifications for the players
 interface Player {
