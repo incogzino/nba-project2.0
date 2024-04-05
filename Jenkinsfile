@@ -10,12 +10,7 @@ pipeline {
                 sh 'npm install' 
             }
         }
-                stage('Npm run dev') {
-            steps {
-                sh 'npm run dev'
-
-            }
-        }
+        
         stage('SonarQube analysis') {
             steps {
                 script {
@@ -26,6 +21,14 @@ pipeline {
                 }
             }
         }
+
+        stage('Npm run dev') {
+            steps {
+                sh 'npm run dev'
+
+            }
+        }
+
 
     }
 }
