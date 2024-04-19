@@ -22,6 +22,15 @@ pipeline {
             }
         }
 
+//         stage('SSH') { 
+//             steps {
+//                 sshagent (credentials: ['JoshSSHlogin']) {
+//                    sh("ssh -o StrictHostKeyChecking=no ubuntu@13.48.195.150 'rm -rf TSINextReactApp && git clone
+// https://github.com/incogzino/nba-project2.0.git
+// && cd TSINextReactApp && npm ci && sudo npm run dev -- -p 80 -H 0.0.0.0'")
+//             }
+//         }
+
         stage('Npm run dev') {
             steps {
                 sh 'npm run dev'

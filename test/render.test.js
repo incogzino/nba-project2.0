@@ -5,7 +5,7 @@ import React from 'react';
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react';
 import App from '../src/App';
-import {expect, jest, test} from '@jest/globals';
+// import {expect, jest, test} from '@jest/globals';
 import { enableFetchMocks } from 'jest-fetch-mock';
 enableFetchMocks()
 
@@ -27,10 +27,10 @@ fetch.mockResponse(JSON.stringify(
 render(<App />);
 
     // Waits for the component to update with the mocked data
-    const playerIke = screen.queryByText('Ike Anigbogu');
+    const player_firstname = await screen.findByText('Ike');
 
   //expects to see Ike Anigbogu
-    expect(playerIke).toBeDefined();
+    expect(player_firstname).toBeInTheDocument();
 
   });
 });
